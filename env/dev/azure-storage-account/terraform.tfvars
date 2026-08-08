@@ -1,7 +1,7 @@
 location            = "Central India"
 resource_group_name = "Buildpiper-test"
 
-storage_account_name          = "bpblobdevng"
+storage_account_name          = "bpblobdevng01"
 account_tier                  = "Standard"
 # Replication options: LRS (local only), GRS (geo-redundant), RAGRS (read-access geo-redundant)
 account_replication_type      = "GRS"
@@ -37,7 +37,7 @@ network_rules_bypass         = ["AzureServices"]
 is_hns_enabled = false
 
 # Diagnostics
-diagnostic_settings_enabled = true
+diagnostic_settings_enabled = false
 log_analytics_workspace_id  = "/subscriptions/e733803c-caff-4e00-9e38-875404b339e8/resourceGroups/Buildpiper-test/providers/Microsoft.OperationalInsights/workspaces/bp-log-analytics-dev"
 
 # Log Archival for Audit (configure storage account ID for archiving logs)
