@@ -9,7 +9,7 @@ vms = {
 
   # VM 1 - Ubuntu 24.04 x64 Gen2 (Linux)
   "1111-BP-DEV-S1-1" = {
-    size           = "Standard_B1s"
+    size           = "Standard_D2s_v3"
     admin_username = "adminuser"
     admin_password = "Password1234!"
 
@@ -60,7 +60,7 @@ vms = {
 
   # VM 2 - Windows Server 2025
   "BP-WIN-DEV-S1-2" = {
-    size           = "Standard_B1s"
+    size           = "Standard_D2s_v3"
     admin_username = "adminuser"
     admin_password = "Password1234!"
 
@@ -112,7 +112,7 @@ vms = {
 
   # VM 3 - FW Machine (Rocky Linux - temporary, replace with pfSense when client provides image)
   "1111-BP-DEV-S1-3" = {
-    size           = "Standard_B1s"
+    size           = "Standard_D2s_v3"
     admin_username = "adminuser"
     admin_password = "Password1234!"
 
