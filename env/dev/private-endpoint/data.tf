@@ -13,7 +13,7 @@ data "terraform_remote_state" "blob" {
   backend = "azurerm"
   config = {
     resource_group_name  = "Buildpiper-test"
-    storage_account_name = "terraformstateng"
+    storage_account_name = "buildpiperstate"
     container_name       = "state-file"
     key                  = "env/dev/azure-storage-account/terraform.tfstate"
   }
@@ -23,7 +23,7 @@ data "terraform_remote_state" "file_share" {
   backend = "azurerm"
   config = {
     resource_group_name  = "Buildpiper-test"
-    storage_account_name = "terraformstateng"
+    storage_account_name = "buildpiperstate"
     container_name       = "state-file"
     key                  = "env/dev/azure-storage-file-share/terraform.tfstate"
   }
@@ -33,7 +33,7 @@ data "terraform_remote_state" "acr" {
   backend = "azurerm"
   config = {
     resource_group_name  = "Buildpiper-test"
-    storage_account_name = "terraformstateng"
+    storage_account_name = "buildpiperstate"
     container_name       = "state-file"
     key                  = "env/dev/acr/terraform.tfstate"
   }
@@ -43,7 +43,7 @@ data "terraform_remote_state" "redis" {
   backend = "azurerm"
   config = {
     resource_group_name  = "Buildpiper-test"
-    storage_account_name = "terraformstateng"
+    storage_account_name = "buildpiperstate"
     container_name       = "state-file"
     key                  = "env/dev/redis/terraform.tfstate"
   }
@@ -53,7 +53,7 @@ data "terraform_remote_state" "eventhub" {
   backend = "azurerm"
   config = {
     resource_group_name  = "Buildpiper-test"
-    storage_account_name = "terraformstateng"
+    storage_account_name = "buildpiperstate"
     container_name       = "state-file"
     key                  = "env/dev/eventhub/terraform.tfstate"
   }

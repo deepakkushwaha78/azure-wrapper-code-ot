@@ -33,7 +33,7 @@ file_share_config = {
 # Remote State - Network
 # -------------------------------------------------------
 tf_state_resource_group  = "Buildpiper-test"
-tf_state_storage_account = "terraformstateng"
+tf_state_storage_account = "buildpiperstate"
 tf_state_container       = "state-file"
 tf_state_network_key     = "env/dev/network-skeleton/terraform.tfstate"
 
