@@ -2,7 +2,7 @@ diagnostic_name    = "activity-log-to-blob"
 resource_group_name = "Buildpiper-test"
 location            = "Central India"
 storage_account_id = [
-  "/subscriptions/787ff5ea-eda4-47f2-b1a6-751605952ca7/resourceGroups/Buildpiper-test/providers/Microsoft.Storage/storageAccounts/bpblobdevng"
+  "/subscriptions/e733803c-caff-4e00-9e38-875404b339e8/resourceGroups/Buildpiper-test/providers/Microsoft.Storage/storageAccounts/buildpiperstate"
 ]
 
 log_categories = [
