@@ -34,7 +34,7 @@ geo_redundant_backup_enabled = false
 # Diagnostic settings: logs sent to AGW's Log Analytics + Storage Account (reused)
 # Set true to enable, IDs are auto-fetched from AGW remote state
 enable_diagnostic_settings = true
-log_analytics_workspace_id  = "/subscriptions/787ff5ea-eda4-47f2-b1a6-751605952ca7/resourceGroups/Buildpiper-test/providers/Microsoft.OperationalInsights/workspaces/bp-log-analytics-dev"
+log_analytics_workspace_id  = "/subscriptions/e733803c-caff-4e00-9e38-875404b339e8/resourceGroups/Buildpiper-test/providers/Microsoft.OperationalInsights/workspaces/bp-log-analytics-dev"
 
 # Private access configuration
 private_dns_zone_name                      = "newgen.postgres.database.azure.com"
@@ -59,7 +59,7 @@ logs_storage_account_name = "bpdblogsdevs11"
 # MONITORING ALERTS (CPU, Memory, Storage)
 # -----------------------------------------------------------------------
 enable_alerts           = true
-action_group_id         = "/subscriptions/787ff5ea-eda4-47f2-b1a6-751605952ca7/resourceGroups/Buildpiper-test/providers/microsoft.insights/actionGroups/bp-postgres-alerts"
+action_group_id         = "/subscriptions/e733803c-caff-4e00-9e38-875404b339e8/resourceGroups/Buildpiper-test/providers/microsoft.insights/actionGroups/bp-postgres-alerts"
 cpu_alert_threshold     = 80
 memory_alert_threshold  = 80
 storage_alert_threshold = 80

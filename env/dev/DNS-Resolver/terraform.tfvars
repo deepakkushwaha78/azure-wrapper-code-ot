@@ -36,10 +36,10 @@ forwarding_rules = {
 
 vnet_links = {
   aks_vnet_link = {
-    vnet_id = "/subscriptions/787ff5ea-eda4-47f2-b1a6-751605952ca7/resourceGroups/Buildpiper-test/providers/Microsoft.Network/virtualNetworks/BP_VPC_DEV_S1_1"
+    vnet_id = "/subscriptions/e733803c-caff-4e00-9e38-875404b339e8/resourceGroups/Buildpiper-test/providers/Microsoft.Network/virtualNetworks/BP_VPC_DEV_S1_1"
   }
   monolithic_vnet_link = {
-    vnet_id = "/subscriptions/787ff5ea-eda4-47f2-b1a6-751605952ca7/resourceGroups/Buildpiper-test/providers/Microsoft.Network/virtualNetworks/BP_VPC_PRD_S1_1"
+    vnet_id = "/subscriptions/e733803c-caff-4e00-9e38-875404b339e8/resourceGroups/Buildpiper-test/providers/Microsoft.Network/virtualNetworks/BP_VPC_PRD_S1_1"
   }
 }
 

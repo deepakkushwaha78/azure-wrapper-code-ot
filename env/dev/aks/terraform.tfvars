@@ -60,4 +60,4 @@ observability_node_pool = {
 
 
 # Application Gateway ID for ingress controller (optional)
-ingress_application_gateway_id = "/subscriptions/787ff5ea-eda4-47f2-b1a6-751605952ca7/resourceGroups/Buildpiper-test/providers/Microsoft.Network/applicationGateways/BP-AGW-DEV-S1-1"
+ingress_application_gateway_id = "/subscriptions/e733803c-caff-4e00-9e38-875404b339e8/resourceGroups/Buildpiper-test/providers/Microsoft.Network/applicationGateways/BP-AGW-DEV-S1-1"

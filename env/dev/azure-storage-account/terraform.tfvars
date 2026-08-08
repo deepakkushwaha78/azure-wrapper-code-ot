@@ -38,7 +38,7 @@ is_hns_enabled = false
 
 # Diagnostics
 diagnostic_settings_enabled = true
-log_analytics_workspace_id  = "/subscriptions/787ff5ea-eda4-47f2-b1a6-751605952ca7/resourceGroups/Buildpiper-test/providers/Microsoft.OperationalInsights/workspaces/bp-log-analytics-dev"
+log_analytics_workspace_id  = "/subscriptions/e733803c-caff-4e00-9e38-875404b339e8/resourceGroups/Buildpiper-test/providers/Microsoft.OperationalInsights/workspaces/bp-log-analytics-dev"
 
 # Log Archival for Audit (configure storage account ID for archiving logs)
 log_retention_days         = 365

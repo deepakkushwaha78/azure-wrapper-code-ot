@@ -300,8 +300,8 @@ services = {
 # Retention: 30 days for non-prod, 90 days for prod
 # ---------------------------------------------------------------
 enable_flow_logs                    = true
-flow_log_storage_account_id         = "/subscriptions/787ff5ea-eda4-47f2-b1a6-751605952ca7/resourceGroups/Buildpiper-test/providers/Microsoft.Storage/storageAccounts/bpblobdevng"
-flow_log_workspace_id               = "/subscriptions/787ff5ea-eda4-47f2-b1a6-751605952ca7/resourceGroups/Buildpiper-test/providers/Microsoft.OperationalInsights/workspaces/bp-log-analytics-dev"
+flow_log_storage_account_id         = "/subscriptions/e733803c-caff-4e00-9e38-875404b339e8/resourceGroups/Buildpiper-test/providers/Microsoft.Storage/storageAccounts/bpblobdevng"
+flow_log_workspace_id               = "/subscriptions/e733803c-caff-4e00-9e38-875404b339e8/resourceGroups/Buildpiper-test/providers/Microsoft.OperationalInsights/workspaces/bp-log-analytics-dev"
 flow_log_retention_days             = 30  # 30 days for non-prod, change to 90 for prod
 flow_log_traffic_analytics_interval = 60
 network_watcher_name                = "NetworkWatcher_centralindia"
