@@ -8,21 +8,18 @@ resource "azurerm_private_dns_zone" "zones" {
 
 # VNet Links — driven by tfvars
 resource "azurerm_private_dns_zone_virtual_network_link" "links" {
-  for_each              = var.private_endpoints
-  name                  = each.value.vnet_link_name
-  resource_group_name   = var.resource_group_name
-  private_dns_zone_name = azurerm_private_dns_zone.zones[each.key].name
-  virtual_network_id    = data.azurerm_virtual_network.vnet.id
-  tags                  = var.tags
+  for_each            = var.private_endpoints
+  name                = each.value.vnet_link_name
+  private_dns_zone_id = azurerm_private_dns_zone.zones[each.key].id
+  virtual_network_id  = data.azurerm_virtual_network.vnet.id
+  tags                = var.tags
 }
 
 # Resource ID lookup — remote state se (not in tfvars, these are infra outputs)
 locals {
   resource_ids = {
     blob     = data.terraform_remote_state.blob.outputs.storage_account_id
-    file     = data.terraform_remote_state.file_share.outputs.storage_account_id
     acr      = data.terraform_remote_state.acr.outputs.acr_id
-    redis    = data.terraform_remote_state.redis.outputs.redis_cache_details.redis_id
     eventhub = data.terraform_remote_state.eventhub.outputs.namespace_id
   }
 }

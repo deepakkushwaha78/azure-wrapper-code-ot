@@ -25,26 +25,19 @@ private_endpoints = {
     vnet_link_name    = "blob-dns-link"
   }
 
-  file = {
-    name              = "BP-File-DEV-S1-1-pe"
-    subresource_names = ["file"]
-    dns_zone_name     = "privatelink.file.core.windows.net"
-    vnet_link_name    = "file-dns-link"
-  }
-
-  acr = {
+acr = {
     name              = "BP-ACR-DEV-S1-1-pe"
     subresource_names = ["registry"]
     dns_zone_name     = "privatelink.azurecr.io"
     vnet_link_name    = "acr-dns-link"
   }
 
-  redis = {
-    name              = "BP-Redis-DEV-S1-1-pe"
-    subresource_names = ["redisCache"]
-    dns_zone_name     = "privatelink.redis.cache.windows.net"
-    vnet_link_name    = "redis-dns-link"
-  }
+  # redis = {
+  #   name              = "BP-Redis-DEV-S1-1-pe"
+  #   subresource_names = ["redisCache"]
+  #   dns_zone_name     = "privatelink.redis.cache.windows.net"
+  #   vnet_link_name    = "redis-dns-link"
+  # }
 
   eventhub = {
     name              = "BP-Kafka-DEV-S1-1-pe"
