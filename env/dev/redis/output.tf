@@ -4,14 +4,9 @@ output "redis_cache_details" {
     redis_id       = module.redis.redis_cache_details.redis_id
     redis_name     = module.redis.redis_cache_details.redis_name
     hostname       = module.redis.redis_cache_details.redis_hostname
-    ssl_port       = module.redis.redis_cache_details.redis_ssl_port
-    port           = module.redis.redis_cache_details.redis_port
     location       = module.redis.redis_cache_details.redis_location
     resource_group = module.redis.redis_cache_details.redis_resource_group
     sku_name       = module.redis.redis_cache_details.redis_sku_name
-    capacity       = module.redis.redis_cache_details.redis_capacity
-    family         = module.redis.redis_cache_details.redis_family
-    version        = module.redis.redis_cache_details.redis_version
     public_access  = module.redis.redis_cache_details.public_network_access
   }
 }

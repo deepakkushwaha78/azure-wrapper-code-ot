@@ -53,5 +53,5 @@ network_rules_default_action   = "Deny"
 network_rules_bypass           = ["AzureServices"]
 
 # Diagnostics
-diagnostic_settings_enabled = true
+diagnostic_settings_enabled = false
 log_analytics_workspace_id  = "/subscriptions/e733803c-caff-4e00-9e38-875404b339e8/resourceGroups/Buildpiper-test/providers/Microsoft.OperationalInsights/workspaces/bp-log-analytics-dev"
