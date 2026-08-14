@@ -7,21 +7,21 @@ vnet1_cidr = "10.215.0.0/21"
 vnet1_subnets = {
 
   subnet1 = {
-    name    = "BP_SUB1_DEV_S1_1"
-    cidr    = "10.215.0.0/27"
-    
+    name = "BP_SUB1_DEV_S1_1"
+    cidr = "10.215.0.0/27"
+
   }
 
   subnet2 = {
-    name    = "BP_SUB2_DEV_S1_1"
-    cidr    = "10.215.0.32/27"
-    
+    name = "BP_SUB2_DEV_S1_1"
+    cidr = "10.215.0.32/27"
+
   }
 
   subnet3 = {
-    name    = "BP_SUB3_DEV_S1_1"
-    cidr    = "10.215.0.64/27"
-    
+    name = "BP_SUB3_DEV_S1_1"
+    cidr = "10.215.0.64/27"
+
   }
 
   subnet4 = {
@@ -31,17 +31,17 @@ vnet1_subnets = {
   }
 
   subnet5 = {
-    name    = "BP_SUB5_DEV_S1_1"
-    cidr    = "10.215.0.128/27"
-    rt_name = "rt-aks-subnet5"
+    name       = "BP_SUB5_DEV_S1_1"
+    cidr       = "10.215.0.128/27"
+    rt_name    = "rt-aks-subnet5"
     delegation = "postgres"
 
   }
 
   subnet6 = {
-    name    = "BP_SUB6_DEV_S1_1"
-    cidr    = "10.215.0.192/26"
-    
+    name = "BP_SUB6_DEV_S1_1"
+    cidr = "10.215.0.192/26"
+
   }
 
   subnet7 = {
@@ -51,14 +51,14 @@ vnet1_subnets = {
   }
 
   subnet8 = {
-    name    = "BP_SUB8_DEV_S1_1"
-    cidr    = "10.215.0.160/28"
-    
+    name = "BP_SUB8_DEV_S1_1"
+    cidr = "10.215.0.160/28"
+
   }
 
   subnet9 = {
-    name    = "BP_SUB9_DEV_S1_1"
-    cidr    = "10.215.0.176/28"
+    name = "BP_SUB9_DEV_S1_1"
+    cidr = "10.215.0.176/28"
 
     delegation = "dnsResolvers"
   }
@@ -75,15 +75,15 @@ vnet2_cidr = "10.249.96.0/21"
 vnet2_subnets = {
 
   subnet1 = {
-    name    = "BP_SUB1_PRD_S1_1"
-    cidr    = "10.249.96.0/28"
-   
+    name = "BP_SUB1_PRD_S1_1"
+    cidr = "10.249.96.0/28"
+
   }
 
   subnet2 = {
-    name    = "BP_SUB2_PRD_S1_1"
-    cidr    = "10.249.96.32/27"
-   
+    name = "BP_SUB2_PRD_S1_1"
+    cidr = "10.249.96.32/27"
+
   }
 
   subnet3 = {
@@ -99,21 +99,21 @@ vnet2_subnets = {
   }
 
   subnet5 = {
-    name    = "BP_SUB5_PRD_S1_1"
-    cidr    = "10.249.96.128/27"
-    
+    name = "BP_SUB5_PRD_S1_1"
+    cidr = "10.249.96.128/27"
+
   }
 
   subnet6 = {
-    name    = "BP_SUB6_PRD_S1_1"
-    cidr    = "10.249.96.16/28"
-    
+    name = "BP_SUB6_PRD_S1_1"
+    cidr = "10.249.96.16/28"
+
   }
 
   subnet7 = {
-    name    = "BP_SUB7_PRD_S1_1"
-    cidr    = "10.249.96.192/27"
-   
+    name = "BP_SUB7_PRD_S1_1"
+    cidr = "10.249.96.192/27"
+
   }
 
   gateway = {
@@ -123,13 +123,13 @@ vnet2_subnets = {
 }
 
 tags = {
-  Name           = "BP-VNET-DEV-S1-1"
-  CC             = "BP_DEV_Vnet"
-  CC-Project     = "BP_DEV"
-  Customer-Code  = "BP"
-  Environment    = "DEV"
-  Project        = "ClientProject"
+  Name          = "BP-VNET-DEV-S1-1"
+  CC            = "BP_DEV_Vnet"
+  CC-Project    = "BP_DEV"
+  Customer-Code = "BP"
+  Environment   = "DEV"
+  Project       = "ClientProject"
 }
 
-exclude_subnets_aks = ["subnet2"]
+exclude_subnets_aks        = ["subnet2"]
 exclude_subnets_monolithic = []

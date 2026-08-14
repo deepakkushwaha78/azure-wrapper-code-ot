@@ -20,6 +20,6 @@ output "public_ip_ids" {
 
 output "firewall_routes" {
   description = "Firewall routes attached to route tables"
-  value = var.firewall_vm_name != null ? module.virtual_machine[var.firewall_vm_name].firewall_routes : {}
+  value       = var.firewall_vm_name != null ? module.virtual_machine[var.firewall_vm_name].firewall_routes : {}
 }
 

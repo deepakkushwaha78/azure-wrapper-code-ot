@@ -8,8 +8,8 @@ locals {
     for service_name, service_config in var.services : service_name => {
       rules = merge(
         service_config.skip_outbound_deny
-          ? { for k, v in local.env_rules : k => v if k != "Outbound-DenyAll" }
-          : local.env_rules,
+        ? { for k, v in local.env_rules : k => v if k != "Outbound-DenyAll" }
+        : local.env_rules,
         lookup(var.service_extra_rules, service_name, {})
       )
     }

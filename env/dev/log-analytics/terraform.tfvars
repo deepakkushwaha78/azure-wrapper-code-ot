@@ -1,5 +1,5 @@
 location            = "Central India"
-resource_group_name = "Buildpiper-test"
+resource_group_name = "buildpiper"
 
 workspace_name    = "bp-log-analytics-dev"
 sku               = "PerGB2018"

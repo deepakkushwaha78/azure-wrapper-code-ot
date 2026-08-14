@@ -1,5 +1,5 @@
 name                = "BP-dns-resolver"
-resource_group_name = "Buildpiper-test"
+resource_group_name = "buildpiper"
 location            = "Central India"
 subnet_name         = "subnet9"
 forwarding_rules = {
@@ -36,18 +36,18 @@ forwarding_rules = {
 
 vnet_links = {
   aks_vnet_link = {
-    vnet_id = "/subscriptions/e733803c-caff-4e00-9e38-875404b339e8/resourceGroups/Buildpiper-test/providers/Microsoft.Network/virtualNetworks/BP_VPC_DEV_S1_1"
+    vnet_id = "/subscriptions/918ba53a-0b00-48ca-b894-5584a28bf4f1/resourceGroups/buildpiper/providers/Microsoft.Network/virtualNetworks/BP_VPC_DEV_S1_1"
   }
   monolithic_vnet_link = {
-    vnet_id = "/subscriptions/e733803c-caff-4e00-9e38-875404b339e8/resourceGroups/Buildpiper-test/providers/Microsoft.Network/virtualNetworks/BP_VPC_PRD_S1_1"
+    vnet_id = "/subscriptions/918ba53a-0b00-48ca-b894-5584a28bf4f1/resourceGroups/buildpiper/providers/Microsoft.Network/virtualNetworks/BP_VPC_PRD_S1_1"
   }
 }
 
 tags = {
-  Name           = "BP-dns-resolver"
-  CC             = "BP-dns-resolver"
-  CC-Project     = "BP_DEV"
-  Customer-Code  = "BP"
-  Environment    = "DEV"
-  Project        = "ClientProject"
+  Name          = "BP-dns-resolver"
+  CC            = "BP-dns-resolver"
+  CC-Project    = "BP_DEV"
+  Customer-Code = "BP"
+  Environment   = "DEV"
+  Project       = "ClientProject"
 }

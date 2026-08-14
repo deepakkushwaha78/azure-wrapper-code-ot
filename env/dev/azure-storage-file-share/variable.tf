@@ -41,7 +41,7 @@ variable "public_network_access_enabled" {
 variable "account_kind" {
   description = "Storage account kind"
   type        = string
- 
+
 }
 
 variable "min_tls_version" {
@@ -59,7 +59,7 @@ variable "network_rules_default_action" {
 variable "network_rules_bypass" {
   description = "Network rules bypass list"
   type        = list(string)
- 
+
 }
 
 variable "share_retention_days" {

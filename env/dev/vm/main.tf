@@ -1,6 +1,6 @@
 module "virtual_machine" {
-  for_each = var.vms
-  source   = "git::https://github.com/ot-client/newgen_terraform.git//terraform-azure-vm?ref=azure"
+  for_each                     = var.vms
+  source                       = "git::https://github.com/ot-client/newgen_terraform.git//terraform-azure-vm?ref=azure"
   vm_name                      = each.key
   resource_group_name          = data.azurerm_resource_group.rg.name
   location                     = var.location
@@ -29,7 +29,7 @@ module "virtual_machine" {
   firewall_route_name          = var.firewall_route_name
   route_tables                 = each.key == var.firewall_vm_name ? var.route_tables : {}
   firewall_nic_id              = each.key == var.firewall_vm_name ? "self" : null
-  
+
   # Private disk access configuration
   public_network_access_enabled = each.value.public_network_access_enabled
   network_access_policy         = each.value.network_access_policy

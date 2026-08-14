@@ -18,11 +18,11 @@ module "postgres" {
   tags                                       = var.tags
   postgres_zones                             = var.postgres_zones
   mode                                       = var.mode
-  enable_diagnostic_settings   = var.enable_diagnostic_settings
-  log_analytics_workspace_id    = var.log_analytics_workspace_id  # Maintenance window: client controls via tfvars
-  maintenance_window_day    = var.maintenance_window_day
-  maintenance_window_hour   = var.maintenance_window_hour
-  maintenance_window_minute = var.maintenance_window_minute
+  enable_diagnostic_settings                 = var.enable_diagnostic_settings
+  log_analytics_workspace_id                 = var.log_analytics_workspace_id # Maintenance window: client controls via tfvars
+  maintenance_window_day                     = var.maintenance_window_day
+  maintenance_window_hour                    = var.maintenance_window_hour
+  maintenance_window_minute                  = var.maintenance_window_minute
 
   # HA: pass toggle to module
   high_availability_enabled = var.high_availability_enabled
@@ -35,16 +35,16 @@ module "postgres" {
   diagnostic_storage_account_id = data.terraform_remote_state.agw.outputs.diag_storage_account_id
 
   # Audit and Logs Storage
-  enable_audit_storage        = var.enable_audit_storage
-  audit_storage_account_name  = var.audit_storage_account_name
-  enable_logs_storage         = var.enable_logs_storage
-  logs_storage_account_name   = var.logs_storage_account_name
+  enable_audit_storage       = var.enable_audit_storage
+  audit_storage_account_name = var.audit_storage_account_name
+  enable_logs_storage        = var.enable_logs_storage
+  logs_storage_account_name  = var.logs_storage_account_name
 
   # Monitoring Alerts
-  enable_alerts            = var.enable_alerts
-  action_group_id          = var.action_group_id
-  cpu_alert_threshold      = var.cpu_alert_threshold
-  memory_alert_threshold   = var.memory_alert_threshold
-  storage_alert_threshold  = var.storage_alert_threshold
+  enable_alerts             = var.enable_alerts
+  action_group_id           = var.action_group_id
+  cpu_alert_threshold       = var.cpu_alert_threshold
+  memory_alert_threshold    = var.memory_alert_threshold
+  storage_alert_threshold   = var.storage_alert_threshold
   diagnostic_log_categories = var.diagnostic_log_categories
 }

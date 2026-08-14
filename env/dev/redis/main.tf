@@ -1,13 +1,13 @@
 module "redis" {
   source = "git::https://github.com/ot-client/newgen_terraform.git//terraform-azure-redis?ref=azure"
 
-  redis_name          = local.redis_name
-  resource_group_name = var.resource_group_name
-  location            = var.location
-  capacity            = var.capacity
-  sku_name            = var.sku_name
+  redis_name                    = local.redis_name
+  resource_group_name           = var.resource_group_name
+  location                      = var.location
+  capacity                      = var.capacity
+  sku_name                      = var.sku_name
   family                        = var.family
-  minimum_tls_version           = var.minimum_tls_version 
+  minimum_tls_version           = var.minimum_tls_version
   public_network_access_enabled = var.public_network_access_enabled
 
   # Private endpoint managed separately in private-endpoint module

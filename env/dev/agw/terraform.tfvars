@@ -3,7 +3,7 @@
 # ----------------------------------------
 clientcode          = "BP"
 env                 = "dev"
-resource_group_name = "Buildpiper-test"
+resource_group_name = "buildpiper"
 location            = "Central India"
 
 # ----------------------------------------

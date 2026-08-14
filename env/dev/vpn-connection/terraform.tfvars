@@ -1,7 +1,7 @@
 customer_code       = "BP"
 environment         = "DEV"
 project_name        = "ClientProject"
-resource_group_name = "Buildpiper-test"
+resource_group_name = "buildpiper"
 location            = "Central India"
 
 vng_name = "BP-VNG-DEV-S1-1"

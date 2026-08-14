@@ -4,14 +4,14 @@ variable "resource_group_name" {}
 variable "vms" {
   description = "Map of VM configurations. Add a new block here to create a new VM."
   type = map(object({
-    size           = string
-    admin_username = string
-    admin_password = string
-    vnet_name      = string
-    subnet_name    = string
-    nsg_name         = optional(string)
-    create_public_ip = optional(bool, false)
-    computer_name    = optional(string)
+    size                 = string
+    admin_username       = string
+    admin_password       = string
+    vnet_name            = string
+    subnet_name          = string
+    nsg_name             = optional(string)
+    create_public_ip     = optional(bool, false)
+    computer_name        = optional(string)
     enable_ip_forwarding = optional(bool, false) # Windows only - max 15 chars. Linux leave null.
 
     os_disk_storage_account_type = optional(string, "Premium_LRS")

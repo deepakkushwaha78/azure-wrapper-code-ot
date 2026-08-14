@@ -41,8 +41,8 @@ variable "vnet_resource_group_name" {
 variable "services" {
   description = "Map of service names to their subnet names. Set skip_outbound_deny = true for AGW subnets."
   type = map(object({
-    subnet_name          = string
-    skip_outbound_deny   = optional(bool, false)
+    subnet_name        = string
+    skip_outbound_deny = optional(bool, false)
   }))
 }
 

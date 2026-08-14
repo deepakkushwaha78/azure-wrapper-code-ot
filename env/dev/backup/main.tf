@@ -17,12 +17,12 @@ module "backup" {
   retention_daily_count = var.retention_daily_count
 
   # Azure Site Recovery configuration
-  enable_site_recovery                                     = var.enable_site_recovery
-  target_location                                          = var.target_location
-  target_resource_group_name                               = var.target_resource_group_name
-  replication_policy_name                                  = var.replication_policy_name
-  recovery_point_retention_in_minutes                      = var.recovery_point_retention_in_minutes
-  application_consistent_snapshot_frequency_in_minutes     = var.application_consistent_snapshot_frequency_in_minutes
+  enable_site_recovery                                 = var.enable_site_recovery
+  target_location                                      = var.target_location
+  target_resource_group_name                           = var.target_resource_group_name
+  replication_policy_name                              = var.replication_policy_name
+  recovery_point_retention_in_minutes                  = var.recovery_point_retention_in_minutes
+  application_consistent_snapshot_frequency_in_minutes = var.application_consistent_snapshot_frequency_in_minutes
 
   # Tag Backup=True wale VMs automatically fetch hote hain data.tf se
   vm_ids = {

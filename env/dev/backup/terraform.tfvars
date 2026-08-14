@@ -1,5 +1,5 @@
 location            = "Central India"
-resource_group_name = "Buildpiper-test"
+resource_group_name = "buildpiper"
 
 # -----------------------------------------------------------------------
 # RECOVERY VAULT CONFIGURATION
@@ -27,12 +27,12 @@ retention_daily_count = 7
 # -----------------------------------------------------------------------
 # AZURE SITE RECOVERY CONFIGURATION
 # -----------------------------------------------------------------------
-enable_site_recovery                                     = false
-target_location                                          = "South India"
-target_resource_group_name                               = "Buildpiper-test-dr"
-replication_policy_name                                  = "BP-replication-policy-dev"
-recovery_point_retention_in_minutes                      = 1440
-application_consistent_snapshot_frequency_in_minutes     = 240
+enable_site_recovery                                 = false
+target_location                                      = "South India"
+target_resource_group_name                           = "buildpiper-dr"
+replication_policy_name                              = "BP-replication-policy-dev"
+recovery_point_retention_in_minutes                  = 1440
+application_consistent_snapshot_frequency_in_minutes = 240
 
 # -----------------------------------------------------------------------
 # TAG-BASED VM SELECTION

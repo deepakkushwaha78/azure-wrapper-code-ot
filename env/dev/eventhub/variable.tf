@@ -67,7 +67,7 @@ variable "message_retention" {
 }
 
 variable "public_access_network_enable" {
-  type        = bool
+  type = bool
 }
 # ----------------------------------------
 # EventHub Namespace

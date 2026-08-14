@@ -147,11 +147,11 @@ variable "observability_node_pool" {
 }
 
 variable "client_code" {
-  type        = string
+  type = string
 }
 
 variable "env" {
-  type        = string
+  type = string
 }
 
 variable "ingress_application_gateway_id" {

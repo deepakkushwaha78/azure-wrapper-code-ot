@@ -1,5 +1,5 @@
 location            = "Central India"
-resource_group_name = "Buildpiper-test"
+resource_group_name = "buildpiper"
 # -----------------------------------------------------------------------
 # To add a new VM: copy any block below, change the key & values, done.
 # Key = VM name (hyphen only, no underscore - Azure restriction)

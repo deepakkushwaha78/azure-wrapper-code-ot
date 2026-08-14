@@ -130,7 +130,7 @@ variable "log_analytics_workspace_id" {
 }
 
 variable "mode" {
-  type    = string
+  type = string
 }
 
 variable "diagnostic_log_categories" {

@@ -1,21 +1,21 @@
-variable "diagnostic_name" { 
-  type = string 
+variable "diagnostic_name" {
+  type = string
 }
 
 variable "storage_account_id" {
   type = list(string)
 }
 
-variable "log_categories" { 
-   type = list(string) 
+variable "log_categories" {
+  type = list(string)
 }
 
-variable "action_group_name" { 
-  type = string 
+variable "action_group_name" {
+  type = string
 }
 
-variable "action_group_short_name" { 
-type = string 
+variable "action_group_short_name" {
+  type = string
 
 }
 

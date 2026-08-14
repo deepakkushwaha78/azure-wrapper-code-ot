@@ -1,5 +1,5 @@
 module "network_aks" {
-  source = "git::https://github.com/ot-client/newgen_terraform.git//terraform-azure-network-skeleton?ref=azure"
+  source              = "git::https://github.com/ot-client/newgen_terraform.git//terraform-azure-network-skeleton?ref=azure"
   vnet_name           = var.vnet1_name
   location            = var.location
   resource_group_name = var.resource_group_name

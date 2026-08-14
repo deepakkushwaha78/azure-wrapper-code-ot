@@ -12,8 +12,8 @@ data "azurerm_virtual_network" "vnet" {
 data "terraform_remote_state" "blob" {
   backend = "azurerm"
   config = {
-    resource_group_name  = "Buildpiper-test"
-    storage_account_name = "buildpiperstate"
+    resource_group_name  = "buildpiper"
+    storage_account_name = "terraformstatebp"
     container_name       = "state-file"
     key                  = "env/dev/azure-storage-account/terraform.tfstate"
   }
@@ -22,8 +22,8 @@ data "terraform_remote_state" "blob" {
 data "terraform_remote_state" "acr" {
   backend = "azurerm"
   config = {
-    resource_group_name  = "Buildpiper-test"
-    storage_account_name = "buildpiperstate"
+    resource_group_name  = "buildpiper"
+    storage_account_name = "terraformstatebp"
     container_name       = "state-file"
     key                  = "env/dev/acr/terraform.tfstate"
   }
@@ -32,8 +32,8 @@ data "terraform_remote_state" "acr" {
 data "terraform_remote_state" "eventhub" {
   backend = "azurerm"
   config = {
-    resource_group_name  = "Buildpiper-test"
-    storage_account_name = "buildpiperstate"
+    resource_group_name  = "buildpiper"
+    storage_account_name = "terraformstatebp"
     container_name       = "state-file"
     key                  = "env/dev/eventhub/terraform.tfstate"
   }

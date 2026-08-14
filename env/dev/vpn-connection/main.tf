@@ -6,10 +6,10 @@ module "vpn_connection" {
   location                   = var.location
   local_gateway_address      = var.local_gateway_address
   local_address_space        = var.local_address_space
-  
+
   connection_name            = local.connection_name
   virtual_network_gateway_id = data.azurerm_virtual_network_gateway.vng.id
   shared_key                 = var.shared_key
-  
+
   tags = var.tags
 }

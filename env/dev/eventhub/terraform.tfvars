@@ -3,7 +3,7 @@
 # ----------------------------------------
 clientcode          = "BP"
 env                 = "dev"
-resource_group_name = "Buildpiper-test"
+resource_group_name = "buildpiper"
 location            = "Central India"
 
 # ----------------------------------------
@@ -25,9 +25,9 @@ local_authentication_enabled = true
 # ----------------------------------------
 # EventHub (Kafka Topic)
 # ----------------------------------------
-eventhub_name     = "bp-kafka-topic"
-partition_count   = 2
-message_retention = 1
+eventhub_name                = "bp-kafka-topic"
+partition_count              = 2
+message_retention            = 1
 public_access_network_enable = false
 # ----------------------------------------
 # Tags

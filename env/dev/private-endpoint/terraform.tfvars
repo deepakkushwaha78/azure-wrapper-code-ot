@@ -1,5 +1,5 @@
 location            = "Central India"
-resource_group_name = "Buildpiper-test"
+resource_group_name = "buildpiper"
 
 vnet_name   = "BP_VPC_DEV_S1_1"
 subnet_name = "BP_SUB6_DEV_S1_1"
@@ -25,7 +25,7 @@ private_endpoints = {
     vnet_link_name    = "blob-dns-link"
   }
 
-acr = {
+  acr = {
     name              = "BP-ACR-DEV-S1-1-pe"
     subresource_names = ["registry"]
     dns_zone_name     = "privatelink.azurecr.io"

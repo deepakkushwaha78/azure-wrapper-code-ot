@@ -1,12 +1,12 @@
-resource_group_name = "Buildpiper-test"
+resource_group_name = "buildpiper"
 location            = "Central India"
 # prefix is deprecated - dns_prefix is auto-generated as: {client_code}-aks-{env}-dns
 # prefix              = "demo"
-env                 = "dev"
-client_code         = "BP"
-client_name         = "aks"
-client_id           = "bp"
-client_secret       = "newgen"
+env           = "dev"
+client_code   = "BP"
+client_name   = "aks"
+client_id     = "bp"
+client_secret = "newgen"
 
 kubernetes_version = "1.33.6"
 sku_tier           = "Standard"
@@ -41,7 +41,7 @@ user_node_pool = {
   enable_auto_scaling = true
   min_count           = 1
   max_count           = 2
-  labels              = {} 
+  labels              = {}
   max_pods            = 20
   availability_zones  = []
 }
@@ -53,11 +53,11 @@ observability_node_pool = {
   max_pods           = 40
   labels             = { team = "o11y" }
   taints             = ["team=o11y:NoSchedule"]
-  availability_zones = [] 
+  availability_zones = []
 }
 
 
 
 
 # Application Gateway ID for ingress controller (optional)
-ingress_application_gateway_id = "/subscriptions/e733803c-caff-4e00-9e38-875404b339e8/resourceGroups/Buildpiper-test/providers/Microsoft.Network/applicationGateways/BP-AGW-DEV-S1-1"
+ingress_application_gateway_id = "/subscriptions/918ba53a-0b00-48ca-b894-5584a28bf4f1/resourceGroups/buildpiper/providers/Microsoft.Network/applicationGateways/BP-AGW-DEV-S1-1"

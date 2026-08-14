@@ -1,6 +1,6 @@
 customer_code       = "230792"
 environment         = "DEV"
-resource_group_name = "Buildpiper-test"
+resource_group_name = "buildpiper"
 location            = "Central India"
 
 # Client's on-premises gateway IP address (sample)

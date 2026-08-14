@@ -1,8 +1,8 @@
-diagnostic_name    = "activity-log-to-blob"
-resource_group_name = "Buildpiper-test"
+diagnostic_name     = "activity-log-to-blob"
+resource_group_name = "buildpiper"
 location            = "Central India"
 storage_account_id = [
-  "/subscriptions/e733803c-caff-4e00-9e38-875404b339e8/resourceGroups/Buildpiper-test/providers/Microsoft.Storage/storageAccounts/buildpiperstate"
+  "/subscriptions/918ba53a-0b00-48ca-b894-5584a28bf4f1/resourceGroups/buildpiper/providers/Microsoft.Storage/storageAccounts/terraformstatebp"
 ]
 
 log_categories = [
