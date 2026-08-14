@@ -1,5 +1,5 @@
 location            = "Central India"
-resource_group_name = "Buildpiper-test"
+resource_group_name = "buildpiper"
 
 vnet1_name = "BP_VPC_DEV_S1_1"
 vnet1_cidr = "10.215.0.0/21"
