@@ -1,7 +1,7 @@
 customer_code       = "BP"
 environment         = "DEV"
 project_name        = "ClientProject"
-resource_group_name = "Buildpiper-test"
+resource_group_name = "buildpiper"
 location            = "Central India"
 
 sku                           = "Premium"
@@ -16,10 +16,10 @@ georeplications = [
 ]
 
 tags = {
-  Name           = "BP_ACR_DEV"
-  CC             = "BP_DEV_ACR"
-  CC-Project     = "BP_DEV"
-  Customer-Code  = "BP"
-  Environment    = "DEV"
-  Project        = "ClientProject"
+  Name          = "BP_ACR_DEV"
+  CC            = "BP_DEV_ACR"
+  CC-Project    = "BP_DEV"
+  Customer-Code = "BP"
+  Environment   = "DEV"
+  Project       = "ClientProject"
 }
