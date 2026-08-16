@@ -32,7 +32,8 @@ module "postgres" {
 
   # Diagnostic settings: reuse AGW's Storage Account + Log Analytics Workspace
   # IDs fetched from AGW remote state - no manual input needed in tfvars
-  diagnostic_storage_account_id = data.terraform_remote_state.agw.outputs.diag_storage_account_id
+  # diagnostic_storage_account_id = data.terraform_remote_state.agw.outputs.diag_storage_account_id
+  diagnostic_storage_account_id = null
 
   # Audit and Logs Storage
   enable_audit_storage       = var.enable_audit_storage
